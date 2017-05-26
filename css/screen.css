@@ -1,0 +1,110 @@
+﻿body {
+    background: #1a1917;
+}
+
+#page {
+    max-width: 1366px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #1a1917 /*url(../images/bg.jpg) top center / cover no-repeat*/;
+}
+
+.movies .item {
+    cursor: pointer;
+}
+
+.movies .item .thumbnail {
+    border-radius: 0;
+    background: transparent;
+}
+
+.movies .item .thumbnail .caption h3 {
+    color: #a78613;
+    margin: 0;
+    font-size: 16px;
+}
+
+.movies .item .thumbnail .caption h3 span {
+    display: block;
+    font-size: 12px;
+    color: #817a7b;
+    padding-top: 5px;
+}
+
+.movies .item .thumbnail .img {
+    position: relative;
+    overflow: hidden;
+}
+
+.movies .item .thumbnail img {
+    transform: translate3d(0, 0px, 0);
+    -webkit-transform: translate3d(0, 0px, 0);
+    -moz-transform: translate3d(0, 0px, 0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+.movies .item .thumbnail:hover .img::before,
+.movies .item .thumbnail:hover .img::after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.movies .item .thumbnail:hover .img img {
+    transform: translate3d(0, 0px, 0) scale(1.1, 1.1);
+    -webkit-transform: translate3d(0, 0px, 0) scale(1.1, 1.1);
+    -moz-transform: translate3d(0, 0px, 0) scale(1.1, 1.1);
+}
+
+.movies .item .thumbnail .img::before,
+.movies .item .thumbnail .img::after {
+    position: absolute;
+    content: '';
+    opacity: 1;
+    z-index: 1;
+    pointer-events: none;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+.movies .item .thumbnail .img::before {
+    top: 15px;
+    right: 10px;
+    bottom: 15px;
+    left: 10px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+.movies .item .thumbnail .img::after {
+    top: 10px;
+    right: 15px;
+    bottom: 10px;
+    left: 15px;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+}
+.movies .section .title h2 {
+    font-size: 20px;
+    color:#a78613;
+    text-transform: capitalize;
+}
+.breadcrum {
+    overflow: hidden;
+}
+.breadcrum a,
+.breadcrum span {
+    font-size: 16px;
+    color: #a78613;
+    padding: 10px 5px;
+    display: inline-block;
+}
