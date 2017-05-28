@@ -1,5 +1,7 @@
 ﻿body {
     background: #1a1917;
+    color: #a19e9e;
+    font-size: 15px;
 }
 
 #page {
@@ -7,10 +9,13 @@
     margin: 0 auto;
     overflow: hidden;
     background: #1a1917 /*url(../images/bg.jpg) top center / cover no-repeat*/;
+    padding-top: 50px;
 }
 
-.movies .item {
+.movies .movieList .item {
     cursor: pointer;
+    border-bottom: 2px dashed #555;
+    margin-bottom: 18px;
 }
 
 .movies .item .thumbnail {
@@ -107,4 +112,65 @@
     color: #a78613;
     padding: 10px 5px;
     display: inline-block;
+}
+.movieInfo .info {
+    overflow: hidden;
+    background: #0d0d0c;
+}
+.movies .movieInfo .title h2 {
+    font-size: 24px;
+    color: #f5cc2a;
+    text-transform: uppercase;
+}
+.movies .movieInfo .title h2 span {
+    font-size: 20px;
+    color:#fefbf0;
+    display: block;
+    padding-top: 5px;
+}
+.infoList .item h3 {
+    font-size: 15px;
+    color: #a78613;
+    text-transform: capitalize;
+}
+.infoList .item p:first-letter {
+    text-transform: capitalize;
+}
+.headerInner {
+    background: #f5cc2a;
+}
+.nav li a {
+    color: #1a1918;
+    text-transform: capitalize;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.nav li a:hover {
+    background: #312908;
+    color: #ffd71a;
+}
+.headerInner .nav-tabs {
+    border: 0;
+}
+.topbar .navbar {
+    margin: 0;
+    min-height: 0;
+}
+.section {
+    position: relative;
+}
+.section::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -25px;
+    width: 100%;
+    height: 30px;
+    background: #1a1917;
+}
+.copy p {
+    padding: 20px 0;
 }
