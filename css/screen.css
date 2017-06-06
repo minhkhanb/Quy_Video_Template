@@ -174,3 +174,17 @@
 .copy p {
     padding: 20px 0;
 }
+span.play {
+    width: 60px;
+    height: 60px;
+    background: url(../images/play.png) 0 0 / contain no-repeat;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%,0);
+    -moz-transform: translate3d(-50%, -50%,0);
+    -ms-transform: translate3d(-50%, -50%,0);
+    -o-transform: translate3d(-50%, -50%,0);
+    transform: translate3d(-50%, -50%,0);
+}
